@@ -1,7 +1,7 @@
 .seccionPublicidad {
   width: 100%;
-  height: 20vh; /* Mostrar solo la mitad de la imagen */
-  overflow: hidden; /* Ocultar la parte que se sale del div */
+  height: 20vh;
+  overflow: hidden;
   position: relative;
 }
 
