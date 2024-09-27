@@ -1,0 +1,175 @@
+nav {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.divMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav > section > div > div > button {
+  background-color: transparent;
+  border: none;
+}
+
+nav > section > div > div > img {
+  padding: 15px 0;
+}
+
+nav > section > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.divBusqueda {
+  display: flex;
+  justify-content: center;
+}
+
+.divBusqueda > input{
+  width: 75%;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  padding: 0 10px;
+}
+
+.divBusqueda > button{
+  background-color: #F4B25B;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.btnRecomendados {
+  display: flex;
+  padding: 0 15px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.btnRecomendados::-webkit-scrollbar {
+  background: transparent;
+}
+
+.btnRecomendados button {
+  color: white;
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+}
+
+.divUbicacion {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.divUbicacion > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.divUbicacion > div > p{
+  font-size: 10px;
+  color: #CCCCCC;
+}
+
+.pedidos > p , .identificate > div > p {
+  font-size: 12px;
+}
+
+.divUbicacion > div > span, .pedidos, .idioma > span, .pedidos > span, .identificate > div > span{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.derecha {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.idioma, .pedidos {
+  display: none;
+  padding: 5px;
+}
+
+.idioma > div , .iconoArrowDropDown {
+  display: flex;
+  align-items: end;
+}
+
+.btnMenuRecomendados, .divBusquedaMin600px, .divUbicacion, .idioma > span , .identificate{
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .divMenu {
+    display: grid;
+    grid-template-columns: 0.5fr 1.8fr 1fr;
+  }
+  .divBusqueda, .responsiveMax600, .registrarse, .btnMenuPrincipal {
+    display: none;
+  }
+  .btnRecomendados {
+    background-color: #232F3E;
+  }
+  .btnMenuRecomendados {
+    display: flex;
+    align-items: center;
+  }
+  .divBusquedaMin600px, .divUbicacion {
+    display: flex;
+  }
+  .divBusqueda > input{
+    width: 100%;
+    height: 37px;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (min-width: 635px) {
+  .idioma {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 653px) {
+  .idioma > span {
+    display: contents;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .registrarse {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .pedidos {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .registrarse {
+    display: none;
+  }
+  .identificate {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1330px) {
+  .divMenu {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+  }
+  .derecha {
+    gap: 10px;
+  }
+}

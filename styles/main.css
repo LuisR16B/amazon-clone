@@ -1,0 +1,80 @@
+.seccionPublicidad {
+  width: 100%;
+  height: 20vh; /* Mostrar solo la mitad de la imagen */
+  overflow: hidden; /* Ocultar la parte que se sale del div */
+  position: relative;
+}
+
+.seccionPublicidad > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transform: scale(1.4);
+  transform-origin: top;
+  transition: transform 0.9s ease;
+}
+
+header > .seccionRecomendados {
+  background: linear-gradient(0deg, #E3E6E6, #E3E6E6 , #F74901);
+  padding: 20px;
+}
+
+.seccionRecomendados > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.seccionRecomendados > div > div{
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .seccionRecomendados > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .seccionPublicidad > img {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .seccionPublicidad {
+    height: 25vh;
+  }
+  .seccionRecomendados > div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .seccionPublicidad > img {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .seccionPublicidad {
+    height: 30vh;
+  }
+  .seccionPublicidad > img {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .seccionPublicidad {
+    height: 35vh;
+  }
+  .seccionRecomendados > div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .seccionPublicidad > img {
+    transform: scale(1);
+  }
+}
