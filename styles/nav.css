@@ -5,19 +5,24 @@ nav {
   flex-direction: column;
 }
 
+.logo {
+  display: flex;
+}
+
 .divMenu {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 15px 10px;
 }
 
-nav > section > div > div > button {
+.btnMenuPrincipal {
   background-color: transparent;
   border: none;
 }
 
-nav > section > div > div > img {
-  padding: 15px 0;
+.responsiveMax600 {
+  display: flex;
+  align-items: center;
 }
 
 nav > section > div > div {
@@ -34,7 +39,6 @@ nav > section > div > div {
   width: 75%;
   border: 0;
   border-radius: 10px 0 0 10px;
-  padding: 0 10px;
 }
 
 .divBusqueda > button{
@@ -45,7 +49,6 @@ nav > section > div > div {
 
 .btnRecomendados {
   display: flex;
-  padding: 0 15px;
   overflow-y: hidden;
   overflow-x: auto;
   white-space: nowrap;
@@ -59,15 +62,15 @@ nav > section > div > div {
 .btnRecomendados button {
   color: white;
   background-color: transparent;
-  border: 0;
-  padding: 10px;
+  border: 1px solid transparent;
+  padding: 15px 10px;
 }
 
-.divUbicacion {
-  display: flex;
-  align-items: center;
-  margin: 10px;
+.btnRecomendados button:hover, .divUbicacion:hover, .pedidos:hover , .identificate:hover, .idioma:hover, .btnMenuPrincipal:hover, .logo:hover, .cardcesta:hover {
+  border: 1px solid white;
+  cursor: pointer;
 }
+
 .divUbicacion > div {
   display: flex;
   flex-direction: column;
@@ -78,11 +81,15 @@ nav > section > div > div {
   color: #CCCCCC;
 }
 
+.pedidos {
+  border: 1px solid transparent;
+}
+
 .pedidos > p , .identificate > div > p {
   font-size: 12px;
 }
 
-.divUbicacion > div > span, .pedidos, .idioma > span, .pedidos > span, .identificate > div > span{
+.divUbicacion > div > span, .pedidos, .idioma > span, .pedidos > span, .identificate > div > span {
   font-size: 15px;
   font-weight: 500;
 }
@@ -102,16 +109,24 @@ nav > section > div > div {
   align-items: end;
 }
 
-.btnMenuRecomendados, .divBusquedaMin600px, .divUbicacion, .idioma > span , .identificate{
+.divBusquedaMin600px > select {
+  width: 180px;
+  height: 39px;
+  background-color: #E6E6E6;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px 0 0 5px;
+}
+
+.btnMenuRecomendados, .divBusquedaMin600px, .divUbicacion, .identificate, .cesta{
   display: none;
 }
 
 @media only screen and (min-width: 600px) {
   .divMenu {
     display: grid;
-    grid-template-columns: 0.5fr 1.8fr 1fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
   }
-  .divBusqueda, .responsiveMax600, .registrarse, .btnMenuPrincipal {
+  .divBusqueda, .responsiveMax600, .btnMenuPrincipal {
     display: none;
   }
   .btnRecomendados {
@@ -121,8 +136,9 @@ nav > section > div > div {
     display: flex;
     align-items: center;
   }
-  .divBusquedaMin600px, .divUbicacion {
+  .divBusquedaMin600px {
     display: flex;
+    padding-left: 20px;
   }
   .divBusqueda > input{
     width: 100%;
@@ -131,36 +147,40 @@ nav > section > div > div {
   }
 }
 
-@media only screen and (min-width: 635px) {
+@media only screen and (min-width: 768px) {
   .idioma {
     display: flex;
   }
-}
-
-@media only screen and (min-width: 653px) {
-  .idioma > span {
-    display: contents;
+  .idioma > span{
+    padding-left: 4px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .registrarse {
+@media only screen and (min-width: 992px) {
+  .izquierda {
     display: flex;
+    gap: 10px;
+  }
+  .divUbicacion {
+    display: flex;
+    align-items: center;
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .pedidos {
-    display: block;
-  }
-}
 
 @media only screen and (min-width: 1200px) {
+  .divMenu {
+    display: grid;
+    grid-template-columns: 0.5fr 1.8fr 1fr;
+  }
   .registrarse {
     display: none;
   }
-  .identificate {
+  .identificate, .cesta {
     display: flex;
+  }
+  .pedidos {
+    display: block;
   }
 }
 

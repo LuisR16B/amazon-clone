@@ -1,0 +1,140 @@
+.volverTop {
+  background-color: #37475A;
+}
+
+.volverTop > a {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.seccioninformacionAmazon {
+  background-color: #232F3E;
+}
+
+.informacionAmazon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 20px 20px;
+}
+
+.seccionInformacionAmazon2 {
+  display: none;
+  background-color: #232F3E;
+}
+
+.informacionAmazon2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #3a4553;
+}
+
+.informacionAmazon2 > div {
+  padding: 0 10px;
+}
+
+.informacionAmazon2 h3 {
+  color: white;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.informacionAmazon2 ul, .informacionAmazon ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.informacionAmazon2 a, .seccioninformacionAmazon a, .paisesFooter a, .copyright a, .masInformacion a{
+  color: #DDD;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.informacionAmazon2 a:hover, .paisesFooter a:hover, .masInformacion a:hover, .seccioninformacionAmazon a:hover {
+  text-decoration: underline;
+}
+
+.logoFooter {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.paisesFooter {
+  margin: 0 50px;
+  padding-bottom: 20px;
+}
+
+.paisesFooter ul, .copyright ul, .copyright2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.masInformacion {
+  background-color: #131A22;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px 0;
+  padding: 20px  100px;
+}
+
+.masInformacion a {
+  display: flex;
+  flex-direction: column;
+}
+
+.masInformacion span {
+  color: #999999;
+}
+
+.copyright, .copyright2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131A22;
+  color: #DDD;
+  padding: 20px;
+}
+
+.copyright2 {
+  background-color: #232F3E;
+}
+
+.copyright > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.copyright > a {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .seccioninformacionAmazon {
+    display: none;
+  }
+  .seccionInformacionAmazon2 {
+    display: block;
+  }
+}

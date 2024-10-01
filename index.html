@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <!-- tipografia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +18,14 @@
   <nav>
     <section>
       <div class="divMenu">
-        <div>
+        <div class="izquierda">
           <button class="btnMenuPrincipal">
             <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed"><path d="M120-680v-80h720v80H120Zm0 480v-80h720v80H120Zm0-240v-80h720v80H120Z"/></svg>
           </button>
-          <img src="./imagenes/logo.png" alt="logo amazon" width="100px">
-          <span style="color: white;">.es</span>
+          <div class="logo">
+            <img src="./imagenes/logo.png" alt="logo amazon" width="100px">
+            <span>.es</span>
+          </div>
           <div class="divUbicacion">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
             <div>
@@ -32,7 +35,7 @@
           </div>
         </div>
         <div class="divBusqueda divBusquedaMin600px">
-          <select name="departamentos" style="height: 37px; background-color: #E6E6E6; border: 1px solid #E6E6E6; border-radius: 5px 0 0 5px; width: 180px;">
+          <select name="departamentos">
             <option value="Todos los departamentos">Todos los departamentos</option>
             <option value="Akimentacion y bebidas">Akimentacion y bebidas</option>
             <option value="Amazon Global Store">Amazon Global Store</option>
@@ -60,7 +63,6 @@
               <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
             </div>
           </div>
-
           <div class="identificate">
             <div>
               <p>Hola, identificate</p>
@@ -74,11 +76,16 @@
             <p>Devoluciones</p>
             <span>y Pedidos</span>
           </div>
-          <span class="responsiveMax600">Identificarse ></span>
+          <span class="responsiveMax600">
+            Identificarse
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+          </span>
           <svg class="registrarse" xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed"><path d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
-          <div class="cesta">
-            <span>Cesta</span>
+          <div class="cardcesta" style="display: flex; align-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed"><path d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg>
+            <div class="cesta">
+              <span>Cesta</span>
+            </div>
           </div>
         </div>
       </div>
@@ -113,53 +120,729 @@
   <main>
     <header>
       <section class="seccionPublicidad">
-        <img src="https://m.media-amazon.com/images/I/61j+fkff1ZL._SX3000_.jpg" alt="publicidad">
+        <img src="./imagenes/publi.jpg" alt="">
       </section>
       <section class="seccionRecomendados">
         <div>
+          <div class="promocion">
+            <h3>Electrónica variada</h3>
+            <div>
+              <div>
+                <img src="https://m.media-amazon.com/images/I/51eoU0cs2VL._AC_SY170_.jpg" alt="GPS para coche" width="100%">
+                <div class="oferta">
+                  <p><Span>-11%</Span> Oferta flash</p>
+                </div>
+              </div>
+              <div >
+                <img src="https://m.media-amazon.com/images/I/71-bVzbgWTL._AC_SY170_.jpg" alt="Relojes inteligentes" width="100%">
+                <div class="oferta">
+                  <p><Span>-36%</Span> Oferta flash</p>
+                </div>
+              </div>
+              <div>
+                <img src="https://m.media-amazon.com/images/I/71P3zbevqRL._AC_SY170_.jpg" alt="Routers" width="100%">
+                <div class="oferta">
+                  <p><Span>-44%</Span> Oferta flash</p>
+                </div>
+              </div>
+              <div>
+                <img src="https://m.media-amazon.com/images/I/51do-MIXZ7L._AC_SY170_.jpg" alt="Radio" width="100%">
+                <div class="oferta">
+                  <p><Span>-38%</Span> Oferta flash</p>
+                </div>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
+            <h3>Ofertas para ti</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="Ofertas para ti" width="100%" height="80%">
             <a href="#">Explora ahora</a>
           </div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
+            <h3>Ofertas en Outlet</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973863_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="Ofertas en Outlet" width="100%" height="80%">
             <a href="#">Explora ahora</a>
           </div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
+            <h3>Ofertas en productos usados</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/warehouse-deals/Price_perception_DCC_379_x_304px_1x._SY304_CB566175134_.jpg" alt="Ofertas en productos usados" width="100%" height="80%">
+            <a href="#">Descubre mas</a>
+          </div>
+          <div>
+            <h3>Ideas para Casa y cocina</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973866_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="Ideas para Casa y cocina" width="100%" height="80%">
+            <a href="#">Saber mas</a>
+          </div>
+          <div>
+            <h3>Informática y accesorios</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x-Site/2021/February/FujiDashPC1x._SY304_CB659988641_.jpg" alt="Informática y accesorios" width="100%" height="80%">
+            <a href="#">Descubre mas</a>
+          </div>
+          <div>
+            <h3>Los videojuegos más vendidos</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973858_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="Los videojuegos más vendidos" width="100%" height="80%">
             <a href="#">Explora ahora</a>
           </div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
+            <h3>Ponte en forma desde casa</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x-Site/2021/February/GWDesktopSingleImageCardfitathome1x._SY304_CB659988641_.jpg" alt="Ponte en forma desde casa" width="100%" height="80%">
             <a href="#">Explora ahora</a>
           </div>
+        </div>
+      </section>
+      <section class="seccionProductos">
+        <div>
+          <div class="tituloProductos">
+            <h2>Descubre productos italianos</h2>
+            <a href="#">Descubre más</a>
+          </div>
+          <div class="productos">
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Gifts_200x200._CB579210997_.jpg" alt="ideas de regalos">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Food_200x200._CB579210997_.jpg" alt="alimentacion">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Apparel_200x200._CB579210997_.jpg" alt="ropa y accesorios">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Home_200x200._CB579210997_.jpg" alt="hogar y muebles">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Beauty_200x200._CB579210997_.jpg" alt="belleza y salud">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Handmade_200x200._CB579210997_.jpg" alt="artesania italiana">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Kitchen_200x200._CB579210997_.jpg" alt="utensilios de cocina">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Deco_200x200._CB579210997_.jpg" alt="decoraciones">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/04_April/MII_ES_BUBBLE_Toys_200x200._CB579210997_.jpg" alt="juguetes">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seccionProductos">
+        <div>
+          <div class="tituloProductos">
+            <h2>Compra lo básico para el cole</h2>
+            <a href="#">Compra ya</a>
+          </div>
+          <div class="productos">
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB._CB553762709_.jpg" alt="menos de 15">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/ES_200._CB566409580_.png" alt="juguetes y musica">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_2._CB554787436_.jpg" alt="hora de almuerzo">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_3._CB554787436_.jpg" alt="muebles">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_4._CB554787436_.jpg" alt="ropa y calzado">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_5._CB554787436_.jpg" alt="papeleria">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_6._CB554787436_.jpg" alt="deporte y tiempo libre">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_7._CB554787436_.jpg" alt="salud y cuidado personal">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_8._CB554787436_.jpg" alt="libros de texto">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EVENTS/2024/BTS/Exp_GW_Dt_Bub_200X200_95KB_9._CB554787436_.jpg" alt="electronica">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seccionMasProductosRecomendados">
+        <div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
-            <a href="#">Explora ahora</a>
+            <h3>Electrónica variada</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Wireless_Products/XCM_CUTTLE_1470304_2588661_186x116_it_IT._SY116_CB609727299_.jpg" alt="GPS para coche" width="100%">
+                <p>GPS para coche</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Wireless/XCM_CUTTLE_1458203_2516782_186x116_es_ES._SY116_CB629609965_.jpg" alt="Relojes inteligentes" width="100%">
+                <p>Relojes inteligentes</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Wireless_Products/XCM_CUTTLE_1524291_2821829_186x116_it_IT._SY116_CB619434033_.jpg" alt="Routers" width="100%">
+                <p>Routers</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Wireless_Products/XCM_CUTTLE_1524291_2821828_186x116_it_IT._SY116_CB619434033_.jpg" alt="Radio" width="100%">
+                <p>Radio</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
           </div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
-            <a href="#">Explora ahora</a>
+            <h3>Videojuegos</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Video_Games_Internet/XCM_CUTTLE_1524348_2822052_186x116_it_IT._SY116_CB619433403_.jpg" alt="Mandos y controles" width="100%">
+                <p>Mandos y controles</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Video_Games_Internet/XCM_CUTTLE_1524348_2822057_186x116_it_IT._SY116_CB619433403_.jpg" alt="Sillas Gaming" width="100%">
+                <p>Sillas Gaming</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Video_Games_Internet/XCM_CUTTLE_1524348_2822056_186x116_it_IT._SY116_CB619433403_.jpg" alt="Hubs USB" width="100%">
+                <p>Hubs USB</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Video_Games_Internet/XCM_CUTTLE_1486824_2666836_186x116_it_IT._SY116_CB608051214_.jpg" alt="Gafas de realidad virtual" width="100%">
+                <p>Gafas de realidad virtual</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
           </div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
-            <a href="#">Explora ahora</a>
+            <h3>Electrónica</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Consumer_Electronics/XCM_CUTTLE_1524341_2822012_186x116_it_IT._SY116_CB619430741_.jpg" alt="Cables Ethernet" width="100%">
+                <p>Cables Ethernet</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Consumer_Electronics/XCM_CUTTLE_1470372_2588992_186x116_it_IT._SY116_CB609551933_.jpg" alt="Equipos de música" width="100%">
+                <p>Equipos de música</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Consumer_Electronics/XCM_CUTTLE_1470372_2588996_186x116_it_IT._SY116_CB609551933_.jpg" alt="Regletas" width="100%">
+                <p>Regletas</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2023/img/Consumer_Electronics/XCM_CUTTLE_1542609_2913357_186x116_1X_en_US._SY116_CB614381275_.jpg" alt="Radios portátiles" width="100%">
+                <p>Radios portátiles</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
           </div>
           <div>
-            <h2>Titulo</h2>
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/30/x_site/Top_campaings_reflesh_Q4_24/XCM_CUTTLE_1751243_3973864_379x304_1X_pt_PT._SY304_CB564632105_.jpg" alt="" width="100%">
-            <a href="#">Explora ahora</a>
+            <h3>Descubre el diseño Made in Italy</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/03_March/MII_QC-D_HOME_Furniture_186x116._SY116_CB581979535_.jpg" alt="Muebles" width="100%">
+                <p>Muebles</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/07_July/JUNE_MII_QC-D_HOME_KITCHEN_186x116._SY116_CB554270913_.jpg" alt="Cocina" width="100%">
+                <p>Cocina</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2024/Gateways/03_March/MII_QC-D_HOME_Decor_186x116._SY116_CB581979535_.jpg" alt="Decoración" width="100%">
+                <p>Decoración</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ACS/Made_in_Italy/2023/GWs/10-October/MII_QC-D_Home_Lamps1_186x116._SY116_CB578018672_.jpg" alt="Lámparas" width="100%">
+                <p>Lámparas</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+        </div>
+      </section>
+      <section class="seccionProductos">
+        <div>
+          <div class="tituloProductos">
+            <h2>Compra lo básico para el cole</h2>
+            <a href="#">Compra ya</a>
+          </div>
+          <div class="productos">
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_9._CB563497750_.jpg" alt="Equipaje">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_10._CB563497750_.jpg" alt="Botas de mujer">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_11._CB563497750_.jpg" alt="camisas de mujer">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_12._CB563497750_.jpg" alt="Relojes de mujer">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_13._CB563497750_.jpg" alt="vaqueros de mujer">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_14._CB563497750_.jpg" alt="chaquetas de hombre">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_15._CB563497750_.jpg" alt="botas de hombre">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/Exp_GW_Dt_Bub_200X200_12KB_16._CB563497750_.jpg" alt="camisas de hombre">
+            </div>
+            <div>
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/08Aug/New_Arrivals/EU5/HP/D162234086_Exp_GW_Dt_Bub_200X200_ES._CB564072127_.jpg" alt="pantalones de hombres">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seccionMasProductosRecomendados">
+        <div>
+          <div>
+            <h3>Juguetes y juegos</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Toys_Internet/XCM_CUTTLE_1470396_2589170_186x116_it_IT._SY116_CB609553186_.jpg" alt="Muñecos cabezones" width="100%">
+                <p>Muñecos cabezones</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Toys_Internet/XCM_CUTTLE_1524350_2822080_186x116_it_IT._SY116_CB619432395_.jpg" alt="Puzzles" width="100%">
+                <p>Puzzles</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Kitchen/XCM_CUTTLE_1458243_2516992_186x116_es_ES._SY116_CB629605295_.jpg" alt="Juegos de mesa" width="100%">
+                <p>Juegos de mesa</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Toys/XCM_CUTTLE_1449193_2454445_186x116_es_ES._SY116_CB632913563_.jpg" alt="Cocinas de juguete" width="100%">
+                <p>Cocinas de juguete</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+          <div>
+            <h2>Muebles</h2>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Furniture/XCM_CUTTLE_1524349_2822070_186x116_it_IT._SY116_CB619433643_.jpg" alt="Sillas de escritorio" width="100%">
+                <p>Sillas de escritorio</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Furniture/XCM_CUTTLE_1449190_2454422_186x116_es_ES._SY116_CB632913301_.jpg" alt="Bases para camas" width="100%">
+                <p>Bases para camas</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Furniture/XCM_CUTTLE_1524349_2822069_186x116_it_IT._SY116_CB619433643_.jpg" alt="Mecedoras" width="100%">
+                <p>Mecedoras</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2023/img/Furniture/XCM_CUTTLE_1534893_2868552_186x116_es_ES._SY116_CB590556858_.jpg" alt="Mesas de comedor" width="100%">
+                <p>Mesas de comedor</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+          <div>
+            <h3>Camisetas gráficas geniales</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2024/SAT/B2S/HP/Exp_GW_Dt_Quad_Card_186X116_4KB_3._SY116_CB566889258_.jpg" alt="Disney" width="100%">
+                <p>Disney</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2024/SAT/B2S/HP/Exp_GW_Dt_Quad_Card_186X116_4KB_2._SY116_CB566889258_.jpg" alt="Star Wars" width="100%">
+                <p>Star Wars</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2024/SAT/B2S/HP/Exp_GW_Dt_Quad_Card_372X232_10KB_1._SY116_CB566889258_.jpg" alt="Marvel" width="100%">
+                <p>Marvel</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/AMAZON-FASHION/2024/SAT/B2S/HP/Exp_GW_Dt_Quad_Card_186X116_4KB._SY116_CB566889258_.jpg" alt="Otras Marcas" width="100%">
+                <p>Otras Marcas</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+          <div>
+            <h3>Fotografía y videocámaras</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Camera/XCM_CUTTLE_1448399_2451162_186x116_es_ES._SY116_CB632665518_.jpg" alt="Videocámaras" width="100%">
+                <p>Videocámaras</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Camera/XCM_CUTTLE_1448399_2451161_186x116_es_ES._SY116_CB632665518_.jpg" alt="Telescopios" width="100%">
+                <p>Telescopios</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Camera/XCM_CUTTLE_1448399_2451159_186x116_es_ES._SY116_CB631463257_.jpg" alt="Palos de selfie" width="100%">
+                <p>Palos de selfie</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Camera/XCM_CUTTLE_1458178_2516650_186x116_es_ES._SY116_CB629635547_.jpg" alt="Objetivos de cámaras" width="100%">
+                <p>Objetivos de cámaras</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+          <div>
+            <h3>Indispensables para el día a día</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/07Jul/3P_SAT/EU5/HP/Exp_GW_Dt_Quad_Card_06_186X116_4KB._SY116_CB566417425_.jpg" alt="sockenkauf24" width="100%">
+                <p>sockenkauf24</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/07Jul/3P_SAT/EU5/HP/Exp_GW_Dt_Quad_Card_09_Snocks_186X116_4KB._SY116_CB566417425_.jpg" alt="Snocks" width="100%">
+                <p>Snocks</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/07Jul/3P_SAT/EU5/HP/Exp_GW_Dt_Quad_Card_04_Hermko_186X116_4KB._SY116_CB566417430_.jpg" alt="HERMKO" width="100%">
+                <p>HERMKO</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/EU-STORES/2024/SL/Q3/07Jul/3P_SAT/EU5/HP/Exp_GW_Dt_Quad_Card_08_Merry_Style_186X116_4KB._SY116_CB566417425_.jpg" alt="Merry Style" width="100%">
+                <p>Merry Style</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+          <div>
+            <h3>Ordenadores reacondicionados</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/Amazon_Renewed/D156885872_DQC_Laptop_186_x_116_1x._SY116_CB564271724_.jpg" alt="Portátiles" width="100%">
+                <p>Portátiles</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/Amazon_Renewed/D156885872_DQC_Desktop_186_x_116_1x._SY116_CB564271724_.jpg" alt="Ordenadores de sobremesa" width="100%">
+                <p>Ordenadores de sobremesa</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/Amazon_Renewed/D156885872_DQC_GamingTech_186_x_116_1x._SY116_CB564271724_.jpg" alt="Tecnología Gamer" width="100%">
+                <p>Tecnología Gamer</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/Amazon_Renewed/D156885872_DQC_Accessories_186_x_116_1x._SY116_CB564271724_.jpg" alt="Accesorios" width="100%">
+                <p>Accesorios</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+          <div>
+            <h3>Grandes electrodomésticos</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Major_Appliances/XCM_CUTTLE_1486744_2666470_186x116_it_IT._SY116_CB608058566_.jpg" alt="Microondas con grill" width="100%">
+                <p>Microondas con grill</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Major_Appliances/XCM_CUTTLE_1470364_2588918_186x116_it_IT._SY116_CB609581655_.jpg" alt="Lavadoras" width="100%">
+                <p>Lavadoras</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Major_Appliances/XCM_CUTTLE_1470364_2588912_186x116_it_IT._SY116_CB609581655_.jpg" alt="Placas vitrocerámicas" width="100%">
+                <p>Placas vitrocerámicas</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Major_Appliances/XCM_CUTTLE_1470364_2588923_186x116_it_IT._SY116_CB609581655_.jpg" alt="GPS para coche" width="100%">
+                <p>Frigoríficos mini</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
+          </div>
+          <div>
+            <h3>Oficina y papelería</h3>
+            <div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Camera/XCM_CUTTLE_1441037_2405923_186x116_es_ES._SY116_CB635094034_.jpg" alt="Portaminas" width="100%">
+                <p>Portaminas</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Camera/XCM_CUTTLE_1441037_2405924_186x116_es_ES._SY116_CB635094034_.jpg" alt="Pizarras blancas" width="100%">
+                <p>Pizarras blancas</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Office/XCM_CUTTLE_1448405_2451178_186x116_es_ES._SY116_CB632665767_.jpg" alt="Ceras para colorear" width="100%">
+                <p>Ceras para colorear</p>
+              </div>
+              <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/30/ES-hq/2022/img/Office/XCM_CUTTLE_1448405_2451173_186x116_es_ES._SY116_CB632665767_.jpg" alt="Diarios" width="100%">
+                <p>Diarios</p>
+              </div>
+            </div>
+            <a href="#">ver mas</a>
           </div>
         </div>
       </section>
     </header>
   </main>
+  <footer>
+    <section class="volverTop">
+      <a href="#">Volver arriba</a>
+    </section>
+    <section class="seccioninformacionAmazon">
+      <div class="informacionAmazon">
+        <div>
+          <ul>
+            <li><a href="#">Mis pedidos</a></li>
+            <li><a href="#">Tu Planea y Ahorra</a></li>
+            <li><a href="#">Listas y regalos</a></li>
+            <li><a href="#">Mis articulos vistos recientemente</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Configuracion 1-Clic</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="#">Mis listas</a></li>
+            <li><a href="#">Mesa de Regalos</a></li>
+            <li><a href="#">Vender de Amazon</a></li>
+            <li><a href="#">Alertas de revision y de seguridad del producto</a></li>
+            <li><a href="#">Atencion al cliente</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <a href="#">¿Ya eres cliente? Identificarse</a>
+        <div>
+          <ul>
+            <li>Condiciones de uso</li>
+            <li>Aviso de Privacidad</li>
+            <li>Valoracion</li>
+          </ul>
+        <p>© 1996-2024, Amazon.com, Inc. o sus afiliados</p>
+        </div>
+      </div>
+    </section>
+    <section class="seccionInformacionAmazon2">
+      <div class="informacionAmazon2">
+        <div>
+          <h3>Conocenos</h3>
+          <ul>
+            <li>
+              <a href="#">Trabajar en amazon</a>
+            </li>
+            <li>
+              <a href="#">Sobre amazon.es</a>
+            </li>
+            <li>
+              <a href="#">Sostenibilidad</a>
+            </li>
+            <li>
+              <a href="#">Amazon Science</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Gana dinero con nosotros</h3>
+          <ul>
+            <li>
+              <a href="#">Vender en Amazon</a>
+            </li>
+            <li>
+              <a href="#">Vender en Amazon Business</a>
+            </li>
+            <li>
+              <a href="#">Vender en Amazon Handmade</a>
+            </li>
+            <li>
+              <a href="#">Desarrolla y protege tu marca</a>
+            </li>
+            <li>
+              <a href="#">Programa de afiliados</a>
+            </li>
+            <li>
+              <a href="#">Logistica de Amazon</a>
+            </li>
+            <li>
+              <a href="#">Suministrar a Amazon</a>
+            </li>
+            <li>
+              <a href="#">Promociona tus productos</a>
+            </li>
+            <li>
+              <a href="#">Publica tu libro en kindle</a>
+            </li>
+            <li>
+              <a href="#">Amazon pay</a>
+            </li>
+            <li><a href="#A">Alojar un Amazon Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Metodos de pago Amazon</h3>
+          <ul>
+            <li>
+              <a href="#">Metodos de pago</a>
+            </li>
+            <li>
+              <a href="#">Conversor de divisas de Amazon</a>
+            </li>
+            <li>
+              <a href="#">Tarjetas regalo</a>
+            </li>
+            <li>
+              <a href="#">Recarga online</a>
+            </li>
+            <li>
+              <a href="#">Recarga en tienda</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>¿Necesitas ayuda?</h3>
+          <ul>
+            <li>
+              <a href="#">Amazon y COVID-19</a>
+            </li>
+            <li>
+              <a href="#">Localizar o gestionar compras</a>
+            </li>
+            <li>
+              <a href="#">Tarifas y políticas de envío</a>
+            </li>
+            <li>
+              <a href="#">Amazon Prime</a>
+            </li>
+            <li>
+              <a href="#">Devolver o reemplazar productos</a>
+            </li>
+            <li>
+              <a href="#">Reciclaje</a>
+            </li>
+            <li>
+              <a href="#">Gestionar contenido y dispositivos</a>
+            </li>
+            <li>
+              <a href="#">Retiradas y alertas de seguridad de productos</a>
+            </li>
+            <li>
+              <a href="#">App Amazon</a>
+            </li>
+            <li>
+              <a href="#">Atención al Cliente</a>
+            </li>
+            <li>
+              <a href="#">IVA sobre los bienes</a>
+            </li>
+            <li>
+              <a href="#">Listas de regalos</a>
+            </li>
+            <li>
+              <a href="#">Denunciar contenido ilegal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logoFooter">
+        <img src="./imagenes/logo.png" alt="logo amazon" width="100px">
+      </div>
+      <div class="paisesFooter">
+        <ul>
+          <li>
+            <a href="#">Australia</a>
+          </li>
+          <li>
+            <a href="#">Alemania</a>
+          </li>
+          <li>
+            <a href="#">Brasil</a>
+          </li>
+          <li>
+            <a href="#">Canada</a>
+          </li>
+          <li>
+            <a href="#">China</a>
+          </li>
+          <li>
+            <a href="#">Estados Unidos</a>
+          </li>
+          <li>
+            <a href="#">Francia</a>
+          </li>
+          <li>
+            <a href="#">India</a>
+          </li>
+          <li>
+            <a href="#">Italia</a>
+          </li>
+          <li>
+            <a href="#">Japon</a>
+          </li>
+          <li>
+            <a href="#">Mexico</a>
+          </li>
+          <li>
+            <a href="#">Paises bajos</a>
+          </li>
+          <li>
+            <a href="#">Polonia</a>
+          </li>
+          <li>
+            <a href="#">Emirato Arabes Unidos</a>
+          </li>
+          <li>
+            <a href="#">Reino Unido</a>
+          </li>
+          <li>
+            <a href="#">Singapur</a>
+          </li>
+          <li>
+            <a href="#">Turquia</a>
+          </li>
+        </ul>
+      </div>
+      <div class="masInformacion">
+        <div>
+          <a href="#">Amazon <span>Transmite millones de canciones</span></a>
+        </div>
+        <div>
+          <a href="#">IberLibro <span>Libros, arte & artículos de colección</span></a>
+        </div>
+        <div>
+          <a href="#">Amazon Web Services <span>Servicios Cloud Computing de Amazon</span></a>
+        </div>
+        <div>
+          <a href="#">Kindle Direct Publishing <span>Publica tu libro en papel y digital de manera independiente</span></a>
+        </div>
+        <div>
+          <a href="#">Amazon Segunda mano <span>Productos devueltos y como nuevos</span></a>
+        </div>
+        <div>
+          <a href="#">Shopbop <span>Marcas de moda de diseño</span></a>
+        </div>
+        <div>
+          <a href="#">Amazon Business <span>Servicio para clientes de empresa</span></a>
+        </div>
+        <div>
+          <a href="#">Audible <span>Disfruta de miles de audiolibros y podcasts originales</span></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <ul>
+          <li>
+            <a href="#">Condiciones de Uso y Venta</a>
+          </li>
+          <li>
+            <a href="#">Aviso de privacidad</a>
+          </li>
+          <li>
+            <a href="#">Área legal</a>
+          </li>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+          <li>
+            <a href="#">Publicidad basada en intereses</a>
+          </li>
+        </ul>
+        <p>© 1996-2024, Amazon.com, Inc. o sus afiliados</p>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>
