@@ -11,6 +11,10 @@
   padding: 20px;
 }
 
+.seccionRecomendados img {
+  object-fit: cover;
+}
+
 .promocion > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
